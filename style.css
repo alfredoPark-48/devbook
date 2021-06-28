@@ -1,10 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+	font-size: 62.5%;
 }
 
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: inherit;
+body {
+	font-family: "Lato", sans-serif;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+.header {
+	height: 101vh;
+	margin-bottom: 10rem;
+	width: 100%;
+	position: relative;
+}
+
+.header__heading {
+	font-size: 5rem;
+	font-weight: 700;
+	color: rgb(58, 52, 52);
+	padding: 1rem 2rem 0rem;
+	cursor: pointer;
+}
+
+.header__content {
+	width: 100%;
+	text-align: center;
+	padding: 4rem 15rem;
+	line-height: 1.5;
+}
+
+.header__content--heading {
+	color: rgb(51, 50, 61);
+	font-size: 6.8rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-transform: capitalize;
+}
+
+.header__content--text-box {
+	margin: auto;
+	width: 70%;
+}
+
+.header__content--text {
+	font-size: 2.5rem;
+	color: rgb(106, 105, 117);
+	margin-bottom: 3rem;
+}
+
+.header__content--button {
+	display: inline-block;
+	border: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+	padding: 1.2rem 6rem;
+	border-radius: 30px;
+	background-color: rgb(14, 118, 255);
+	color: #fff;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.header__content--button:hover {
+	background-color: rgb(41, 55, 73);
+}
+
+.header__img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+img {
+	width: 2rem;
+	height: 2rem;
 }
