@@ -24,7 +24,7 @@ body {
 .header__heading {
 	font-size: 5rem;
 	font-weight: 700;
-	color: rgb(58, 52, 52);
+	color: rgb(228, 227, 227);
 	padding: 1rem 2rem 0rem;
 	cursor: pointer;
 }
@@ -35,7 +35,7 @@ body {
 	line-height: 1.5;
 }
 .header__content--heading {
-	color: rgb(51, 50, 61);
+	color: rgb(228, 227, 227);
 	font-size: 6.8rem;
 	font-weight: 900;
 	margin-bottom: 1rem;
@@ -46,7 +46,7 @@ body {
 }
 .header__content--text {
 	font-size: 2.5rem;
-	color: rgb(106, 105, 117);
+	color: rgb(228, 227, 227);
 	margin-bottom: 3rem;
 }
 .header__content--button {
@@ -249,4 +249,90 @@ body {
 }
 .cta__button:hover {
 	background-color: rgb(41, 55, 73);
+}
+
+/* iPhone */
+@media only screen and (max-width: 850px) {
+	.header {
+		height: 70vh;
+	}
+	.header__heading {
+		font-size: 3rem;
+	}
+	.header__content {
+		padding: 5rem 2rem;
+	}
+	.header__content--heading {
+		font-size: 3.2rem;
+	}
+	.header__content--text-box {
+		width: 100%;
+	}
+	.header__content--text {
+		font-size: 2rem;
+		font-weight: 300;
+	}
+
+	.main-content {
+		padding: 10rem 2rem;
+	}
+	.main-content__header {
+		font-size: 3rem;
+	}
+	.main-content__text-box {
+		width: 100%;
+	}
+
+	.features {
+		padding: 10rem 2rem;
+	}
+	.features__main-heading {
+		font-size: 3rem;
+		padding-bottom: 3rem;
+	}
+	.features__boxes {
+		flex-direction: column;
+	}
+	.features__img {
+		font-size: 10rem;
+		padding: 5rem 0 3rem;
+	}
+	.collection {
+		padding: 12rem 3rem;
+	}
+	.collection__heading {
+		font-size: 3rem;
+	}
+	.collection__desc-box {
+		width: 100%;
+	}
+	.collection__items {
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.collection__item--img {
+		width: 50vw;
+	}
+	.collection__item--price {
+		padding-bottom: 1rem;
+	}
+	.collection__item:not(:last-child) {
+		padding-bottom: 4rem;
+		margin-right: 0;
+	}
+
+	.cta {
+		padding: 12rem 2rem;
+	}
+	.cta__heading {
+		font-size: 3rem;
+	}
+	.cta__text {
+		font-size: 2rem;
+	}
+	.cta__button {
+		font-size: 2rem;
+	}
 }
