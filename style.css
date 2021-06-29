@@ -1,14 +1,12 @@
+/* Default styles */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-
 html {
 	font-size: 62.5%;
 }
-
 body {
 	font-family: "Lato", sans-serif;
 	box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
@@ -17,12 +15,12 @@ body {
 	box-sizing: inherit;
 }
 
+/* Header styles */
 .header {
 	height: 101vh;
 	width: 100%;
 	position: relative;
 }
-
 .header__heading {
 	font-size: 5rem;
 	font-weight: 700;
@@ -30,32 +28,27 @@ body {
 	padding: 1rem 2rem 0rem;
 	cursor: pointer;
 }
-
 .header__content {
 	width: 100%;
 	text-align: center;
 	padding: 4rem 15rem;
 	line-height: 1.5;
 }
-
 .header__content--heading {
 	color: rgb(51, 50, 61);
 	font-size: 6.8rem;
 	font-weight: 900;
 	margin-bottom: 1rem;
 }
-
 .header__content--text-box {
 	margin: auto;
 	width: 70%;
 }
-
 .header__content--text {
 	font-size: 2.5rem;
 	color: rgb(106, 105, 117);
 	margin-bottom: 3rem;
 }
-
 .header__content--button {
 	display: inline-block;
 	border: none;
@@ -73,7 +66,6 @@ body {
 .header__content--button:hover {
 	background-color: rgb(41, 55, 73);
 }
-
 .header__img {
 	height: 100%;
 	width: 100%;
@@ -82,11 +74,6 @@ body {
 	top: 0;
 	z-index: -1;
 }
-
-/* img {
-	width: 2rem;
-	height: 2rem;
-} */
 
 .main-content {
 	display: flex;
@@ -97,47 +84,41 @@ body {
 	padding: 12rem;
 	color: rgb(51, 50, 61);
 }
-
 .main-content__header {
 	font-size: 5rem;
 	text-transform: uppercase;
 	font-weight: 700;
 }
-
 .main-content__text-box {
 	padding: 2rem 0 6rem;
 	width: 50%;
 }
-
 .main-content__text {
 	color: rgb(106, 105, 117);
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 1.5;
 }
-
 .main-content__img {
 	width: 50vw;
 	padding-bottom: 8rem;
 }
 
+/* Features styles */
 .features {
 	background-color: rgb(248, 248, 248);
 	text-align: center;
 	padding: 10rem;
 }
-
 .features__main-heading {
 	font-size: 5rem;
 	padding-bottom: 8rem;
 	text-transform: uppercase;
 	color: rgb(51, 50, 61);
 }
-
 .features__boxes {
 	display: flex;
 }
-
 .features__box {
 	text-align: center;
 	display: flex;
@@ -146,27 +127,25 @@ body {
 	align-items: center;
 	padding: 0 3rem;
 }
-
 .features__heading {
 	color: rgb(51, 50, 61);
 	font-size: 3rem;
 	font-weight: 700;
 	padding-bottom: 1rem;
 }
-
 .features__desc {
 	font-size: 2rem;
 	line-height: 1.5;
 	font-weight: 300;
 	color: rgb(106, 105, 117);
 }
-
 .features__img {
 	color: rgb(14, 118, 255);
 	font-size: 5rem;
 	padding-bottom: 1rem;
 }
 
+/* Collection styles */
 .collection {
 	display: flex;
 	flex-direction: column;
@@ -174,53 +153,44 @@ body {
 	align-items: center;
 	padding: 12rem 0;
 }
-
 .collection__heading {
 	color: rgb(51, 50, 61);
 	font-size: 5rem;
 	text-transform: uppercase;
 }
-
 .collection__desc-box {
 	width: 50%;
 	padding: 2rem 0 5rem;
 }
-
 .collection__desc {
 	color: rgb(106, 105, 117);
 	font-weight: 300;
 	font-size: 2rem;
 	line-height: 1.5;
 }
-
 .collection__items {
 	display: flex;
 	align-items: center;
 	align-content: center;
 	text-align: center;
 }
-
 .collection__item:not(:last-child) {
 	margin-right: 5rem;
 }
-
 .collection__item--img {
 	width: 20vw;
 	padding-bottom: 2rem;
 }
-
 .collection__item--heading {
 	color: rgb(14, 118, 255);
 	font-size: 2rem;
 	padding-bottom: 1rem;
 }
-
 .collection__item--price {
 	font-size: 2.5rem;
 	color: rgb(253, 126, 53);
 	padding-bottom: 2rem;
 }
-
 .collection__item--button {
 	display: inline-block;
 	border: 1px solid rgb(106, 105, 117);
@@ -238,4 +208,45 @@ body {
 .collection__item--button:hover {
 	background-color: rgb(106, 105, 117);
 	color: #fff;
+}
+
+/* CTA styles */
+.cta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	background-color: rgb(248, 248, 248);
+	padding: 12rem;
+}
+.cta__heading {
+	color: rgb(51, 50, 61);
+	font-size: 5rem;
+	text-transform: uppercase;
+	padding: 2rem;
+}
+.cta__text {
+	font-size: 2rem;
+	line-height: 1.5;
+	font-weight: 300;
+	color: rgb(106, 105, 117);
+	padding-bottom: 3rem;
+}
+.cta__button {
+	display: inline-block;
+	border: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+	padding: 1.2rem 6rem;
+	border-radius: 30px;
+	background-color: rgb(14, 118, 255);
+	color: #fff;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.cta__button:hover {
+	background-color: rgb(41, 55, 73);
 }
