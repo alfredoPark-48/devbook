@@ -64,7 +64,8 @@ body {
 	transition: all 0.3s;
 }
 .header__content--button:hover {
-	background-color: rgb(41, 55, 73);
+	background-color: #fff;
+	color: #000;
 }
 .header__img {
 	height: 100%;
@@ -98,6 +99,10 @@ body {
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 1.5;
+	animation-name: slideright;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: 0.8s;
 }
 .main-content__img {
 	width: 50vw;
@@ -393,4 +398,71 @@ body {
 	.cta__button {
 		font-size: 2rem;
 	}
+}
+
+/* Animations */
+@keyframes slideleft {
+	0% {
+		visibility: hidden;
+		transform: translateX(-5rem);
+		opacity: 0;
+	}
+
+	100% {
+		visibility: visible;
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes slideright {
+	0% {
+		visibility: hidden;
+		transform: translateX(5rem);
+		opacity: 0;
+	}
+
+	100% {
+		visibility: visible;
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.fadein {
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+}
+.fadein.appear {
+	opacity: 1;
+}
+.left {
+	opacity: 0;
+	transform: translateX(-5rem);
+}
+.right {
+	opacity: 0;
+	transform: translateX(5rem);
+}
+.bottom {
+	opacity: 0;
+	transform: translateY(5rem);
+}
+.top {
+	opacity: 0;
+	transform: translateY(-5rem);
+}
+.top,
+.bottom,
+.left,
+.right {
+	transition: all 0.5s ease-in;
+}
+.left.appear,
+.right.appear {
+	transform: translateX(0);
+	opacity: 1;
+}
+.bottom.appear,
+.top.appear {
+	transform: translateY(0);
+	opacity: 1;
 }
